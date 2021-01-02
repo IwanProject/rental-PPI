@@ -10,7 +10,7 @@
     <!-- Fav Icon  -->
     <link rel="shortcut icon" href="<?= base_url() ?>assets/images/favicon.png">
     <!-- Page Title  -->
-    <title>GoRental | Admin Dashboard</title>
+    <title><?= $title; ?></title>
     <!-- StyleSheets  -->
     <link rel="stylesheet" href="<?= base_url() ?>assets/css/bootstrap.css">
     <link rel="stylesheet" href="<?= base_url() ?>assets/css/dashlite.css?ver=2.2.0">
@@ -63,6 +63,18 @@
                                         </li>
 
                                     </ul><!-- .nk-menu-sub -->
+                                </li>
+                                <li class="nk-menu-item">
+                                    <a href="<?= base_url('Transaksi') ?>" class="nk-menu-link">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-dashboard-fill"></em></span>
+                                        <span class="nk-menu-text">Transaksi</span>
+                                    </a>
+                                </li>
+                                <li class="nk-menu-item">
+                                    <a href="<?= base_url('Laporan') ?>" class="nk-menu-link">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-dashboard-fill"></em></span>
+                                        <span class="nk-menu-text">Laporan</span>
+                                    </a>
                                 </li>
 
                             </ul><!-- .nk-menu -->
@@ -121,26 +133,7 @@
                                                             </div>
                                                         </a>
                                                     </li><!-- .chat-item -->
-                                                    <li class="chat-item is-unread">
-                                                        <a class="chat-link" href="html/apps-chats.html">
-                                                            <div class="chat-media user-avatar bg-pink">
-                                                                <span>AB</span>
-                                                                <span class="status dot dot-lg dot-success"></span>
-                                                            </div>
-                                                            <div class="chat-info">
-                                                                <div class="chat-from">
-                                                                    <div class="name">Abu Bin Ishtiyak</div>
-                                                                    <span class="time">4:49 AM</span>
-                                                                </div>
-                                                                <div class="chat-context">
-                                                                    <div class="text">Hi, I am Ishtiyak, can you help me with this problem ?</div>
-                                                                    <div class="status unread">
-                                                                        <em class="icon ni ni-bullet-fill"></em>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </a>
-                                                    </li><!-- .chat-item -->
+
                                                     <li class="chat-item">
                                                         <a class="chat-link" href="html/apps-chats.html">
                                                             <div class="chat-media user-avatar">
@@ -311,26 +304,17 @@
                                         <div class="dropdown-menu dropdown-menu-md dropdown-menu-right">
                                             <div class="dropdown-inner user-card-wrap bg-lighter d-none d-md-block">
                                                 <div class="user-card">
-                                                    <div class="user-avatar">
-                                                        <span>AB</span>
-                                                    </div>
+
                                                     <div class="user-info">
-                                                        <span class="lead-text">Abu Bin Ishtiyak</span>
-                                                        <span class="sub-text">info@softnio.com</span>
+                                                        <span class="lead-text"></span>
+                                                        <span class="sub-text"></span>
                                                     </div>
                                                 </div>
                                             </div>
+
                                             <div class="dropdown-inner">
                                                 <ul class="link-list">
-                                                    <li><a href="html/ecommerce/user-profile.html"><em class="icon ni ni-user-alt"></em><span>View Profile</span></a></li>
-                                                    <li><a href="html/ecommerce/user-profile.html"><em class="icon ni ni-setting-alt"></em><span>Account Setting</span></a></li>
-                                                    <li><a href="html/ecommerce/user-profile.html"><em class="icon ni ni-activity-alt"></em><span>Login Activity</span></a></li>
-                                                    <li><a class="dark-switch" href="#"><em class="icon ni ni-moon"></em><span>Dark Mode</span></a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="dropdown-inner">
-                                                <ul class="link-list">
-                                                    <li><a href="#"><em class="icon ni ni-signout"></em><span>Sign out</span></a></li>
+                                                    <li><a href="<?= base_url() ?>Admin/logout"><em class="icon ni ni-signout"></em><span>Sign out</span></a></li>
                                                 </ul>
                                             </div>
                                         </div>

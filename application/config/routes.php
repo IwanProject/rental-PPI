@@ -53,7 +53,10 @@ $route['default_controller'] = 'Admin';
 $route['Mobil'] = 'Admin/mobil';
 $route['Motor'] = 'Admin/motor';
 $route['Merk'] = 'Admin/merk';
-
+$route['Transaksi'] = 'Admin/transaksi';
+$route['Laporan'] = 'Admin/laporan';
+$route['Register'] = 'Admin/register';
+$route['Login'] = 'Admin/login';
 
 
 

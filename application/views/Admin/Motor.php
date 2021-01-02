@@ -77,7 +77,14 @@
                                     <span class="tb-sub">Rp.<?= $m['tarif_sewa'] ?></span>
                                 </div>
                                 <div class="nk-tb-col tb-col-md text-center">
-                                    <span class="tb-sub badge badge-warning"><?= $m['status'] ?></span>
+                                    <!-- <span class="tb-sub badge badge-warning"><?= $m['status'] ?></span> -->
+                                <?php 
+                                    if($m['status'] == "sewa") {
+                                        echo "<span class='tb-sub badge badge-danger'>".$m['status']."</span>";
+                                    } else{
+                                        echo "<span class='tb-sub badge badge-success'>".$m['status']."</span>";
+                                    }
+                                    ?>
                                 </div>
 
                                 <div class="nk-tb-col nk-tb-col-tools">
